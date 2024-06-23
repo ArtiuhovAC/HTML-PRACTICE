@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Упражнение 6</title>
+        <style>
+            table {
+             border-collapse: collapse;
+            }
+            td, th{
+             border: 1px solid black;
+            }
+           </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td style="padding: 10px; text-align: center;">Степень</td>
+                <td style="padding: 10px; text-align: center;">Результат</td>
+            </tr>
+            <script language="JavaScript" type="text/JavaScript">
+                function row(power) {
+                    document.write("<tr>");
+                    document.write(`<td align="center">2<sup>${power}</sup></td>`)
+                    document.write(`<td align="right">${Math.pow(2, power)}</td>`)
+                    document.write("</tr>\n");
+                }
+                for (var i=0; i<=5; i++)
+                    row(i);
+            </script>
+        </table>
+    </body>
+</html> 
