@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Упражнение 12</title>
+<style>
+    .hover-link {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<a href="file:///C:/Users/artiu/Desktop/%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/Sportivnoe_programmirovanie_2020_Stiven_Khalim_Felix_Khalim.pdf" class="pdf-link" target="_blank">PDF Файл</a>
+<a href="#" class="hover-link">Изменить цвет фона</a>
+
+<script>
+function changeBackColor() {
+    var link = document.querySelector('.hover-link');
+    link.addEventListener('mouseover', function() {
+        document.body.style.background = 'red';
+    });
+    link.addEventListener('mouseout', function() {
+        document.body.style.background = '';
+    });
+}
+function showDownload() {
+    var pdfLink = document.querySelector('.pdf-link');
+    pdfLink.addEventListener('click', function() {
+        if (confirm('Для загрузки этого документа требуется программа Adobe Acrobat. Продолжить?')) {
+            this.target = '_blank'; 
+        } else {
+            this.target = '_self'; 
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', changeBackColor);
+document.addEventListener('DOMContentLoaded', showDownload);
+</script>
+
+</body>
+</html>
