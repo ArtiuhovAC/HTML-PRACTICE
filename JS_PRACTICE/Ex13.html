@@ -1,0 +1,25 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Упражнение 13</title>
+    <style>
+        .interactive-image {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <img src="ГВИНТ.jpg" alt="Пример картинки" class="interactive-image" id="image">
+    <script>
+        var image = document.getElementById('image');
+        function enlargeImage() {
+            image.style.transform = 'scale(1.5)';
+        }
+        function shrinkImage() {
+            image.style.transform = 'scale(1)';
+        }
+        image.addEventListener('mouseover', enlargeImage);
+        image.addEventListener('mouseout', shrinkImage);
+    </script>
+</body>
+</html>
