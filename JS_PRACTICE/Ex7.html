@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Массивы предметов</title>
+<script>
+function create() {
+    const subjects = new Array(
+        "Математика", "Физика", "Химия", "Информатика", "Астрономия",
+        "История", "Литература", "География", "Обществознание", "Экономика"
+    );
+    tochnie = subjects.slice(0, 5);
+    netochnie = subjects.slice(5);
+    document.write(`Точные науки: ${tochnie}<br>`);
+    document.write(`Гуманитарные науки: ${netochnie}`);
+}
+</script>
+</head>
+<body>
+<script>
+create();
+</script>
+</body>
+</html>
