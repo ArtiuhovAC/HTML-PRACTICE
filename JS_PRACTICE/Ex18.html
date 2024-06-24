@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Упражнение 18</title>
+        <script language="JavaScript">
+        function move(){
+            var t = parseInt(anil.style.t);
+            if (t < 500){
+                anil.style.t = (t + 2) + 'px';
+                setTimeout(move, 20);
+            }
+        }
+    </script>
+    </head>
+    <body onLoad="move()">
+        <div id="anil" style="position:absolute; left:10px; t:10px">
+            Текст, шагом марш!
+        </div>
+    </body>
+</html>
