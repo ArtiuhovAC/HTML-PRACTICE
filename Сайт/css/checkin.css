@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(140, 191, 235); /* Новый цвет фона для контейнера */
+}
+
+.form-wrapper {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #d3f76f; /* Обновленный цвет фона для формы */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px; /* Увеличенный размер шрифта */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: calc(100% - 50px);
+    margin-bottom: 10px;
+    padding: 12px; /* Увеличенный padding для полей ввода */
+    font-size: 16px; /* Увеличенный размер шрифта для полей ввода */
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px; /* Увеличенный padding для кнопки отправки */
+}

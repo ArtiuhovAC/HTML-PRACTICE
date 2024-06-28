@@ -1,0 +1,85 @@
+body {
+    background: #b5ac93;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для шапки */
+.header-line {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header {
+    margin: 0;
+    font-size: 40px;
+}
+
+.account-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #2c2f36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-button:hover {
+    background-color: #25282e;
+}
+
+/* Стили для навигации */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Стили для поиска */
+.search-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.search-form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.search-field {
+    width: 400px; /* Увеличенная ширина */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
