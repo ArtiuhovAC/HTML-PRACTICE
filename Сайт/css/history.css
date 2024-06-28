@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.text-content {
+    text-align: justify;
+}
+
+.image-content, .video-content {
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+img, video {
+    width: 300px; /* Установленная ширина для изображений и видео */
+}
+
+/* Дополнительные стили можно добавить здесь */
