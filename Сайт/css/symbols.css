@@ -4,60 +4,67 @@
     left: 0px;
     top: 0px;
     margin: 0px;
-    padding: 0px ;
+    padding: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header-img{
     display: inline;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size:40px;
+    font-size: 55px;
     padding-top: 20px;
     color: #f52525;
 }
 
-body{
-    background-image: url(img/фон.jpg);
+.gif {
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    background-image: url('img/серп.png');
+    background-size: contain;
+    margin-left: 10px;
 }
 
-nav{
+/* Стили для навигационного меню */
+nav {
     text-align: center;
-    background-color:#7a8ef0;
+    background-color: #7a8ef0;
     word-spacing: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-nav a{
+nav a {
     color: black;
-    text-decoration-line: none;
-    font-size: 30px;
+    text-decoration: none;
+    font-size: 38px;
 }
 
 nav a:hover{
     color:red;
 }
-/* Стили для футера и символов */
-.footer {
-    padding: 20px;
 
-}
+/* Стили для футера удалены */
 
 body {
-    margin: 0;
-    padding: 0;
     background-image: url(img/фон.jpg);
-    background-size: cover;
 }
+
 .gif {
     display: inline-block;
-    width: 64px;
-    height:64px;
+    width: 78px;
+    height:78px;
     background-image: url(img/серп.png);
     background-size: contain;
     margin-left: 10px;

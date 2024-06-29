@@ -6,7 +6,11 @@
     margin: 0px;
     padding: 0px ;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header-img{
     display: inline;
 }
@@ -43,65 +47,9 @@ nav a:hover{
     color:red;
 }
 
-.account-button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #2c2f36;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-}
-.account-button:hover {
-    background-color: #25282e;
-}
 
-.search-block{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 50px;
-}
 
-.search {
-    display: inline-flex;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  .search-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    order: -1;
-  }
-  
-  .search-field {
-    width: 700px;
-    border: 0; 
-  }
-  
-  .search-field:focus {
-    outline: none;
-  }
-  
-  .search-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-}
 
-.search-button:hover {
-    background-color: #555;
-}
 
 .gif {
     display: inline-block;
@@ -114,64 +62,41 @@ nav a:hover{
 .image-row {
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Добавлено для вертикального выравнивания */
     margin: 20px 0;
 }
 
 .image-wrapper {
     text-align: center;
     margin: 10px;
+    flex: 1; /* Добавлено для равномерного распределения пространства */
 }
 
 .image-wrapper img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
+    width: 480px; /* Фиксированная ширина для всех изображений */
+    height: 300px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обрезка изображений для поддержания пропорций */
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 .image-caption {
     margin-top: 5px;
     font-style: italic;
     font-size: 25px;
     color: #0d0b0b;
-    max-width: 100%;
     word-wrap: break-word;
     overflow: hidden;
-    white-space: nowrap;
     text-align: center; 
 }
 
-#new-books{
-    padding: 20px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-#new-books h2 {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.book {
-    margin: 10px;
-    display: inline-block;
-    text-align: center;
-}
 
 .img {
     width: 100px;
     height: 150px;
 }
 
-.title{
-    font-size: 18px;
-    color: #000;
-}
 
-.author {
-    font-size: 14px;
-    color: #555;
-}
 
 ::-webkit-scrollbar {
     display: none;
