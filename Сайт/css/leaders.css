@@ -88,7 +88,14 @@ table {
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
-
+.gif {
+    display: inline-block;
+    width: 64px;
+    height:64px;
+    background-image: url(img/серп.png);
+    background-size: contain;
+    margin-left: 10px;
+}
 
 th {
     background-color: #007BFF;

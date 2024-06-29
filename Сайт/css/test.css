@@ -12,7 +12,14 @@ body {
     padding: 20px 0;
     text-align: center;
 }
-
+.gif {
+    display: inline-block;
+    width: 64px;
+    height:64px;
+    background-image: url(img/серп.png);
+    background-size: contain;
+    margin-left: 10px;
+}
 .header {
     margin: 0;
     font-size: 40px;

@@ -1,15 +1,96 @@
-.input {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-right: 10%;
-    margin-left: 10%;
-    border: 1px solid black;
-    border-radius: 30px;
+.header-line{
+    position: relative;
+    background-color: rgb(182, 171, 171);
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px ;
 }
-.search-field{
-    justify-self: center;
-    border: 10px;
-    width: 80%;
-    height: 100%;
+
+.header-img{
+    display: inline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:40px;
+    padding-top: 20px;
+    color: #f52525;
+}
+
+body{
+    background-image: url(img/фон.jpg);
+}
+.gif {
+    display: inline-block;
+    width: 64px;
+    height:64px;
+    background-image: url(img/серп.png);
+    background-size: contain;
+    margin-left: 10px;
+}
+nav{
+    text-align: center;
+    background-color:#7a8ef0;
+    word-spacing: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    color: black;
+    text-decoration-line: none;
+    font-size: 30px;
+}
+
+nav a:hover{
+    color:red;
+}
+
+/* Стили для футера и символов */
+.footer {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.symbols {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flag, .coat-of-arms {
+    max-width: 100px; /* Установите максимальную ширину, чтобы изображения были одинакового размера */
+}
+
+.flag p, .coat-of-arms p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Стили для аудио и текста гимна */
+.anthem {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lyrics {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555555;
+    margin: 20px;
+}
+
+.lyrics h2 {
+    font-size: 1.5em;
+    color: #333333;
 }

@@ -1,10 +1,83 @@
-/* Основные стили для таблицы */
+/* Улучшенные стили для таблицы */
+
+.header-line{
+    position: relative;
+    background-color: rgb(182, 171, 171);
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px ;
+}
+
+.header-img{
+    display: inline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:40px;
+    padding-top: 20px;
+    color: #f52525;
+}
+
+body{
+    background-image: url(img/фон.jpg);
+}
+
+nav{
+    text-align: center;
+    background-color:#7a8ef0;
+    word-spacing: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    color: black;
+    text-decoration-line: none;
+    font-size: 30px;
+}
+
+nav a:hover{
+    color:red;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9; /* Светлый фон для таблицы */
+}
+.gif {
+    display: inline-block;
+    width: 64px;
+    height:64px;
+    background-image: url(img/серп.png);
+    background-size: contain;
+    margin-left: 10px;
+}
+/* Стили для контейнера с текстом и видео */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для текстового блока */
+.text-content {
+    flex: 1; /* Занимает все доступное пространство */
+    padding-right: 20px; /* Отступ справа */
+}
+
+/* Стили для видео блока */
+.video-content {
+    flex: 0 0 560px; /* Ширина видео будет фиксированной */
 }
 
 /* Стили для ячеек и заголовков */
@@ -12,13 +85,15 @@ td, th {
     border: 1px solid #ddd;
     padding: 16px;
     text-align: center;
+    vertical-align: middle; /* Выравнивание содержимого по центру по вертикали */
 }
 
 /* Стилизация заголовка таблицы */
 th {
-    background-color: #0056b3;
+    background-color: #007bff; /* Яркий синий цвет */
     color: white;
     font-size: 24px;
+    letter-spacing: 1px; /* Расстояние между буквами */
 }
 
 /* Стили для текстового содержимого */
@@ -26,16 +101,18 @@ th {
     text-align: justify;
     font-size: 18px;
     line-height: 1.6;
+    color: #333; /* Темно-серый цвет текста */
 }
 
 /* Стили для изображений и видео */
 .image-content img,
-.video-content iframe {
+.video-content video {
     width: 100%; /* Адаптивная ширина */
     height: auto;
     max-width: 600px; /* Максимальная ширина для больших экранов */
     border-radius: 10px; /* Скругление углов */
     margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Тень для изображений и видео */
 }
 
 /* Стили для альтернативного фона строк */
@@ -43,18 +120,3 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Стили для мобильных устройств */
-@media (max-width: 768px) {
-    .text-content, .image-content, .video-content {
-        padding: 10px;
-    }
-
-    th, td {
-        padding: 10px;
-    }
-
-    .image-content img,
-    .video-content iframe {
-        max-width: 100%; /* Полная ширина на мобильных устройствах */
-    }
-}

@@ -2,76 +2,44 @@
     <head>
         <title>Регистрационная форма</title>
         <link rel=stylesheet href=css\checkin.css type="text/css">
-        <script>
-            function checkForm() {
-                var name = document.forms[0].name.value;
-                var second_name = document.forms[0].second_name.value;
-                var last_name = document.forms[0].last_name.value;
-                var password = document.forms[0].password.value;
-                var second_pass = document.forms[0].second_pass.value;
-                var email = document.forms[0].email.value;
-                var city = document.forms[0].city.value;
-            
-                if (name == "") {
-                    alert("Введите имя.");
-                    document.forms[0].name.focus();
-                    return false;
-                } 
-                else if (second_name == "") {
-                    alert("Введите фамилию.");
-                    document.forms[0].name.focus();
-                    return false;
-                }
-                else if (last_name == "") {
-                    alert("Введите отчество.");
-                    document.forms[0].name.focus();
-                    return false;
-                }
-                else if (password.length < 5) {
-                    alert("Пароль должен содержать более 4-х символов.");
-                    document.forms[0].password.focus();
-                    return false;
-                } else if (password != second_pass) {
-                    alert("Пароли не совпадают.");
-                    document.forms[0].second_pass.focus();
-                    return false;
-                } else if (email.length == 0) {
-                    alert("Введите электронный адрес");
-                    document.forms[0].email.focus();
-                    return false;
-                } else if (email.indexOf('@') == -1) {
-                    alert("Электронный адрес должен содержать символ '@'.");
-                    document.forms[0].email.focus();
-                    return false;
-                } else if (city.length < 3) {
-                    alert("Поле город должно содержать более 3 символов.");
-                    document.forms[0].city.focus();
-                    return false;
-                }
-                return true;
-            }
-            </script>
+        
     </head>
     
     <body>
+        <script src="scripts/checkin_script.js"></script>
+        <div class="header-line">
+            <div class="header-image">
+                <h1 class="header">
+                    Коммунистическая партия советского союза
+                    <div class="gif"></div>
+                </h1>
+            </div>
+            <nav>
+                <a href="main.html">Главная</a>
+                <a href="history.html">История</a>
+                <a href="leaders.html">Руководители</a>
+                <a href="symbols.html">Символы</a>
+                <a href="#checkin.html">Регистрация</a>
+                
+            </nav>
+        </div>
         <div class="container">
             <div class="form-wrapper">
-                <form>
-                    Ваше имя: *<input type="text" name="name">
+                <form onsubmit="return checkForm();">
+                    Ваше имя: <input type="text" name="name">
                     <br>
-                    Вашу фамилию: *<input type="text" name="second_name">
+                    Вашу фамилию: <input type="text" name="second_name">
                     <br>
-                    Ваше отчество: *<input type="text" name="last_name">
+                    Ваше отчество: <input type="text" name="last_name">
                     <br>
-                    Пароль: *<input type="password" name="password">
+                    Пароль: <input type="password" name="password">
                     <br>
-                    Подтверждение пароля: *<input type="password" name="second_pass">
+                    Подтверждение пароля: <input type="password" name="second_pass">
                     <br>
-                    Электронный адрес: *<input type="text" name="email">
+                    Электронный адрес: <input type="text" name="email">
                     <br>
-                    Город: <input type="text" name="theme">
+                    Город: <input type="text" name="city">
                     <br>
-                    * - необходимые для заполнения поля 
                     <br>
                     <input type="submit" value="Отправить">
                     <input type="reset" value="Очистить">
