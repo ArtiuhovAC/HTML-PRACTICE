@@ -47,10 +47,6 @@ nav a:hover{
     color:red;
 }
 
-
-
-
-
 .gif {
     display: inline-block;
     width: 64px;
@@ -62,20 +58,20 @@ nav a:hover{
 .image-row {
     display: flex;
     justify-content: space-around;
-    align-items: center; /* Добавлено для вертикального выравнивания */
+    align-items: center; 
     margin: 20px 0;
 }
 
 .image-wrapper {
     text-align: center;
     margin: 10px;
-    flex: 1; /* Добавлено для равномерного распределения пространства */
+    flex: 1; 
 }
 
 .image-wrapper img {
-    width: 480px; /* Фиксированная ширина для всех изображений */
-    height: 300px; /* Фиксированная высота для всех изображений */
-    object-fit: cover; /* Обрезка изображений для поддержания пропорций */
+    width: 480px; 
+    height: 300px; 
+    object-fit: cover; 
     border: 1px solid #ddd;
     border-radius: 5px;
 }

@@ -71,20 +71,20 @@ nav a:hover{
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    background-color: #ebf3d7; /* Обновленный цвет фона для формы */
+    background-color: #ebf3d7; 
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-    font-size: 18px; /* Увеличенный размер шрифта */
+    font-size: 18px; 
 }
 input[type="text"],
 input[type="password"],
 input[type="submit"] {
     width: calc(100% - 50px);
     margin-bottom: 10px;
-    padding: 12px; /* Увеличенный padding для полей ввода */
-    font-size: 16px; /* Увеличенный размер шрифта для полей ввода */
+    padding: 12px; 
+    font-size: 16px; 
 }
 
 input[type="submit"] {
     margin-top: 20px;
-    padding: 12px; /* Увеличенный padding для кнопки отправки */
+    padding: 12px; 
 }

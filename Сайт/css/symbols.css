@@ -35,8 +35,6 @@
     background-size: contain;
     margin-left: 10px;
 }
-
-/* Стили для навигационного меню */
 nav {
     text-align: center;
     background-color: #7a8ef0;
@@ -55,8 +53,6 @@ nav a:hover{
     color:red;
 }
 
-/* Стили для футера удалены */
-
 body {
     background-image: url(img/фон.jpg);
 }
@@ -71,30 +67,25 @@ body {
 }
 .symbols {
     display: flex;
-    justify-content: center; /* Центрируем элементы */
+    justify-content: center; 
     padding: 20px;
 }
 
 .flag-container, .coat-of-arms-container {
     text-align: center;
-    margin: 0 10px; /* Уменьшаем отступы сбоку до 10 пикселей */
+    margin: 0 10px; 
 }
 
 .flag-container img, .coat-of-arms-container img {
-    width: 400px; /* Размеры изображений оставляем прежними */
+    width: 400px; 
     height: auto;
 }
 
 .flag-container p, .coat-of-arms-container p {
-    font-size: 24px; /* Размер шрифта подписей оставляем прежним */
+    font-size: 24px; 
     margin-top: 5px;
 }
 
-
-/* Удаление абсолютного позиционирования и связанных с ним стилей */
-
-
-/* Стили для аудио и текста гимна */
 .anthem {
     text-align: center;
     margin-top: 20px;

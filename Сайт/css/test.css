@@ -4,8 +4,6 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
-/* Стили для шапки */
 .header-line {
     background-color: black;
     color: white;
@@ -41,7 +39,6 @@ body {
     background-color: #25282e;
 }
 
-/* Стили для навигации */
 nav {
     background-color: #333;
     padding: 10px 0;
@@ -57,8 +54,6 @@ nav a {
 nav a:hover {
     color: red;
 }
-
-/* Стили для поиска */
 .search-container {
     text-align: center;
     padding: 20px;
@@ -70,7 +65,7 @@ nav a:hover {
 }
 
 .search-field {
-    width: 400px; /* Увеличенная ширина */
+    width: 400px;
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ddd;

@@ -1,4 +1,3 @@
-// Предполагается, что данные будут в формате JSON
 const leadersData = [
     {
         "photo": "data/local_img/1.jpg",
@@ -56,11 +55,8 @@ const leadersData = [
         "term": "1985—1991",
         "positions": "Председатель Президиума Верховного Совета СССР\n(1 октября 1988 — 25 мая 1989),\nпредседатель Верховного Совета СССР\n(25 мая 1989 — 15 марта 1990),\nпрезидент СССР\n(15 марта 1990 — 25 декабря 1991),\nгенеральный секретарь ЦК КПСС\n(11 марта 1985 — 24 августа 1991)"
     }
-    // Добавьте дополнительные объекты для других руководителей
 ];
 
-// Функция для заполнения таблицы данными о руководителях
-// Функция для заполнения таблицы данными о руководителях
 function populateTable() {
     const table = document.getElementById('leaders-table');
     leadersData.forEach(leader => {
@@ -75,11 +71,9 @@ function populateTable() {
         nameCell.textContent = leader.name;
         lifeCell.textContent = leader.life;
         termCell.textContent = leader.term;
-        // Заменяем символы перевода строки на тег <br> для корректного отображения
         positionsCell.innerHTML = leader.positions.replace(/\n/g, '<br>');
     });
 }
 
-// Вызов функции при загрузке страницы
 window.onload = populateTable;
 

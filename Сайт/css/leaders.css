@@ -54,35 +54,33 @@ th, td {
     word-wrap: break-word;
 }
 
-/* Задаем ширину для каждого столбца */
+
 #leaders-table th:nth-child(1),
 #leaders-table td:nth-child(1) {
-    width: 15%; /* Пример для столбца с фото */
+    width: 15%; 
     text-align: center;
 }
 
 #leaders-table th:nth-child(2),
 #leaders-table td:nth-child(2) {
-    width: 20%; /* Пример для столбца с ФИО */
+    width: 20%;
     text-align: center;
 }
-
-/* Задаем ширину для каждого столбца */
 #leaders-table th:nth-child(3),
 #leaders-table td:nth-child(3) {
     text-align: center;
-    width: 10%; /* Пример для столбца с фото */
+    width: 10%; 
 }
 
 #leaders-table th:nth-child(4),
 #leaders-table td:nth-child(4) {
     text-align: center;
-    width: 10%; /* Пример для столбца с ФИО */
+    width: 10%; 
 }
 #leaders-table th:nth-child(5),
 #leaders-table td:nth-child(5) {
     text-align: center;
-    width: 45%; /* Пример для столбца с ФИО */
+    width: 45%;
 }
 table {
     width: 100%;
@@ -118,13 +116,12 @@ img {
     object-fit: cover;
 }
 
-/* Добавляем немного отступа для изображений, чтобы они не касались границ ячеек */
 td img {
     display: block;
     margin: 10px auto;
 }
 
-/* Стиль для заголовка таблицы */
+
 caption {
     font-size: 24px;
     margin-bottom: 10px;
