@@ -1,28 +1,60 @@
+/* Основные стили для таблицы */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Стили для ячеек и заголовков */
 td, th {
     border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.text-content {
-    text-align: justify;
-}
-
-.image-content, .video-content {
+    padding: 16px;
     text-align: center;
 }
 
+/* Стилизация заголовка таблицы */
 th {
-    background-color: #4CAF50;
+    background-color: #0056b3;
     color: white;
+    font-size: 24px;
 }
 
-img, video {
-    width: 300px; /* Установленная ширина для изображений и видео */
+/* Стили для текстового содержимого */
+.text-content {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Дополнительные стили можно добавить здесь */
+/* Стили для изображений и видео */
+.image-content img,
+.video-content iframe {
+    width: 100%; /* Адаптивная ширина */
+    height: auto;
+    max-width: 600px; /* Максимальная ширина для больших экранов */
+    border-radius: 10px; /* Скругление углов */
+    margin-bottom: 20px;
+}
+
+/* Стили для альтернативного фона строк */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .text-content, .image-content, .video-content {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .image-content img,
+    .video-content iframe {
+        max-width: 100%; /* Полная ширина на мобильных устройствах */
+    }
+}

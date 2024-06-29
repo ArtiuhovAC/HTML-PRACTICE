@@ -1,19 +1,44 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px 15px;
     text-align: left;
 }
 
 th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
 img {
     width: 100px;
     height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Добавляем немного отступа для изображений, чтобы они не касались границ ячеек */
+td img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Стиль для заголовка таблицы */
+caption {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
 }
