@@ -1,3 +1,85 @@
+.header-line{
+    position: relative;
+    background-color: rgb(182, 171, 171);
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px ;
+}
+
+.header-img{
+    display: inline;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:40px;
+    padding-top: 20px;
+    color: #f52525;
+}
+
+body{
+    background-image: url(img/фон.jpg);
+}
+
+nav{
+    text-align: center;
+    background-color:#7a8ef0;
+    word-spacing: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a{
+    color: black;
+    text-decoration-line: none;
+    font-size: 30px;
+}
+
+nav a:hover{
+    color:red;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+/* Задаем ширину для каждого столбца */
+#leaders-table th:nth-child(1),
+#leaders-table td:nth-child(1) {
+    width: 15%; /* Пример для столбца с фото */
+    text-align: center;
+}
+
+#leaders-table th:nth-child(2),
+#leaders-table td:nth-child(2) {
+    width: 20%; /* Пример для столбца с ФИО */
+    text-align: center;
+}
+
+/* Задаем ширину для каждого столбца */
+#leaders-table th:nth-child(3),
+#leaders-table td:nth-child(3) {
+    text-align: center;
+    width: 10%; /* Пример для столбца с фото */
+}
+
+#leaders-table th:nth-child(4),
+#leaders-table td:nth-child(4) {
+    text-align: center;
+    width: 10%; /* Пример для столбца с ФИО */
+}
+#leaders-table th:nth-child(5),
+#leaders-table td:nth-child(5) {
+    text-align: center;
+    width: 45%; /* Пример для столбца с ФИО */
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -6,15 +88,11 @@ table {
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px 15px;
-    text-align: left;
-}
+
 
 th {
     background-color: #007BFF;
-    color: white;
+    color: rgb(12, 2, 2);
     font-weight: bold;
 }
 
